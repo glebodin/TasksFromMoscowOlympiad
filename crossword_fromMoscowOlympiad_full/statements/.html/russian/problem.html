@@ -1,0 +1,38 @@
+<HTML>
+<HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Японский кроссворд.</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD>
+<BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Японский кроссворд.</DIV><DIV class="time-limit"><DIV class="property-title">ограничение по времени на тест</DIV>1 секунда</DIV><DIV class="memory-limit"><DIV class="property-title">ограничение по памяти на тест</DIV>256 мегабайт</DIV><DIV class="input-file"><DIV class="property-title">ввод</DIV>стандартный ввод</DIV><DIV class="output-file"><DIV class="property-title">вывод</DIV>стандартный вывод</DIV></DIV><DIV class="legend"><P>В данной задаче вам необходимо решить японский кроссворд. Японский кроссворд - головоломка, в которой, в отличие от обычных кроссвордов, закодированы не слова, а изображения. Изображения закодированы числами, расположенными слева от строк, а также сверху над столбцами. Количество чисел показывает, сколько групп чёрных клеток находятся в соответствующих строке или столбце, а сами числа &mdash; сколько слитных клеток содержит каждая из этих групп (например, набор из трёх чисел &mdash; 4, 1, и 3 означает, что в этом ряду есть три группы: первая &mdash; из четырёх, вторая &mdash; из одной, третья &mdash; из трёх чёрных клеток). В чёрно-белом кроссворде группы должны быть разделены, как минимум, одной пустой клеткой. В отличии от настоящих японских кроссвордов здесь может быть несколько решений.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Входные данные</DIV><P></P><P>Первая строка содержит $$$t$$$ - количество кроссвордов, в следующих $$$t$$$ строках описываются кроссворды : На первой строке вводятся два числа $$$n$$$, $$$m$$$ - размер кроссворда. В следующих $$$n$$$ строках вводятся описания строк в формате : $$$x$$$(число групп в строке) и $$$x$$$ чисел описывающих строку. В следующих $$$m$$$ строках вводятся описания строк в формате : $$$x$$$(число групп в строке) и $$$x$$$ чисел описывающих строку.</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Выходные данные</DIV><P></P><P>Для каждого из $$$t$$$ тестов выведите ответ в виде таблички $$$n$$$ на $$$m$$$, где 1 - черный цвет, а 0 - белый.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Пример</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Входные данные</DIV><PRE class="content">
+1
+5 5
+2 1 1
+1 5
+2 1 1
+1 5
+2 1 1
+2 1 1
+1 5
+2 1 1
+1 5
+2 1 1
+</PRE></DIV><DIV class="output"><DIV class="title">Выходные данные</DIV><PRE class="content">
+0 1 0 1 0
+1 1 1 1 1
+0 1 0 1 0
+1 1 1 1 1
+0 1 0 1 0</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Примечание</DIV><P></P><P>ответ на первый тест из условия - <CENTER> <IMG class="tex-graphics" height="567px" src="af89772901f319c97bd4b0c3d58551d8eea6275c.png" width="567px"> </CENTER> За первый тест ставится от 0 до 30 баллов, за каждый кроссворд по 6 баллов. За второй тест ставится от 0 до 70 баллов, за каждый кроссворд по 10 баллов. Формула оценки за кроссворд - (количество угаданных горизонталей + количество угаданных вертикалей) / (количество горизонталей + количество вертикалей)</P></DIV></DIV><P></P><P>  
+
+
+</P></BODY></HTML>

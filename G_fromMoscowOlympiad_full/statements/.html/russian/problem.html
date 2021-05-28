@@ -1,0 +1,32 @@
+<HTML><HEAD><META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <META content="no-cache" http-equiv="pragma">
+    <META content="-1" http-equiv="expires">
+    <META content="text/html;charset=UTF-8" http-equiv="content-type">
+    <LINK href="problem-statement.css" rel="stylesheet" type="text/css">
+    <TITLE>Склады в Байтландии</TITLE>
+    <SCRIPT type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {inlineMath: [['$$$','$$$']], displayMath: [['$$$$$$','$$$$$$']]}
+        });
+        </SCRIPT>
+        <SCRIPT async="" src="https://polygon.codeforces.com/lib/MathJax/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript">
+    </SCRIPT>
+</HEAD><BODY>
+    <DIV class="problem-statement"><DIV class="header"><DIV class="title">Склады в Байтландии</DIV><DIV class="time-limit"><DIV class="property-title">ограничение по времени на тест</DIV>10 секунд</DIV><DIV class="memory-limit"><DIV class="property-title">ограничение по памяти на тест</DIV>512 мегабайт</DIV><DIV class="input-file"><DIV class="property-title">ввод</DIV>стандартный ввод</DIV><DIV class="output-file"><DIV class="property-title">вывод</DIV>стандартный вывод</DIV></DIV><DIV class="legend"><P>Недавно одна крупная компания решила начать продавать товары и в Байтландии. В этой стране $$$n$$$ городов и между некоторыми из них есть дороги. По законам Байтландии одна компания может построить не более $$$k$$$ складов. Из-за географических особенностей страны (всем известны великие Байтландские горы) доставка из склада возможна только по городу, где находится склад или в соседние города, куда проложены дороги. Вас просят помочь разместить склады так, чтобы доставка была возможна в наибольшее число городов.</P></DIV><P></P><P></P><DIV class="input-specification"><DIV class="section-title">Входные данные</DIV><P></P><P>В первой строке дается количество тестов. Каждый тест выглядит следующим образом: В первой строке даны три числа $$$n, m, k$$$ - количество городов, дорог и максимальное количество городов, где можно поставить склад компании. В следующих $$$m$$$ строках даются ребра в формате $$$u, v$$$ - ребро из $$$u$$$ в $$$v$$$ $$$1 \le k \le n \le 5000, 1 \le m \le 10^5$$$</P></DIV><P></P><P></P><DIV class="output-specification"><DIV class="section-title">Выходные данные</DIV><P></P><P>В первой строке выведите $$$s$$$ - количество складов, которое вы решили построить, на следующей строке через пробел выведите города, где будут построены склады компании.</P></DIV><P></P><P></P><DIV class="sample-tests"><DIV class="section-title">Пример</DIV><P></P><P></P><DIV class="sample-test"><DIV class="input"><DIV class="title">Входные данные</DIV><PRE class="content">
+2
+4 5 2
+1 2
+2 3
+3 4
+4 1
+1 3
+4 2 2
+1 2
+3 4
+</PRE></DIV><DIV class="output"><DIV class="title">Выходные данные</DIV><PRE class="content">
+1
+1
+2
+1 3</PRE></DIV></DIV></DIV><P></P><P></P><DIV class="note"><DIV class="section-title">Примечание</DIV><P></P><P>Балл за тест считается как количество городов, в которое вы можете доставить товары с такой расстановкой складов, деленное на общее количество городов.</P></DIV></DIV><P></P><P>  
+
+</P></BODY></HTML>

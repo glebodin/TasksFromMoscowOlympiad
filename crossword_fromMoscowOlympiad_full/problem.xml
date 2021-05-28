@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<problem revision="13" short-name="crossword" url="https://polygon.codeforces.com/p6voAeX/glebodin/crossword">
+        
+    <names>
+                
+        <name language="russian" value="Японский кроссворд."/>
+            
+    </names>
+        
+    <statements>
+                
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/russian/problem.tex" type="application/x-tex"/>
+                
+        <statement charset="UTF-8" language="russian" mathjax="true" path="statements/.html/russian/problem.html" type="text/html"/>
+                
+        <statement language="russian" path="statements/.pdf/russian/problem.pdf" type="application/pdf"/>
+            
+    </statements>
+        
+    <judging cpu-name="Intel(R) Core(TM) i3-8100 CPU @ 3.60GHz" cpu-speed="3600" input-file="" output-file="">
+                
+        <testset name="tests">
+                        
+            <time-limit>1000</time-limit>
+                        
+            <memory-limit>268435456</memory-limit>
+                        
+            <test-count>3</test-count>
+                        
+            <input-path-pattern>tests/%02d</input-path-pattern>
+                        
+            <answer-path-pattern>tests/%02d.a</answer-path-pattern>
+                        
+            <tests>
+                                
+                <test method="manual" points="0.0" sample="true"/>
+                                
+                <test description="Первые два теста - домик и самолетик, следующие 3 - рандомные" method="manual" points="0.0"/>
+                                
+                <test description="7 рандомных тестов" method="manual" points="0.0"/>
+                            
+            </tests>
+                    
+        </testset>
+            
+    </judging>
+        
+    <files>
+                
+        <resources>
+                        
+            <file path="files/crossword.png"/>
+                        
+            <file path="files/olymp.sty"/>
+                        
+            <file path="files/problem.tex"/>
+                        
+            <file path="files/statements.ftl"/>
+                        
+            <file path="files/testlib.h" type="h.g++"/>
+                    
+        </resources>
+                
+        <attachments>
+                        
+            <file path="files/crossword.png"/>
+                    
+        </attachments>
+                
+        <executables>
+                        
+            <executable>
+                                
+                <source path="files/checker.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/checker.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/generate_rand_test.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/generate_rand_test.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/prechecker.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/prechecker.exe" type="exe.win32"/>
+                            
+            </executable>
+                        
+            <executable>
+                                
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/validator.exe" type="exe.win32"/>
+                            
+            </executable>
+                    
+        </executables>
+            
+    </files>
+        
+    <assets>
+                
+        <checker type="testlib">
+                        
+            <source path="files/checker.cpp" type="cpp.g++17"/>
+                        
+            <binary path="check.exe" type="exe.win32"/>
+                        
+            <copy path="check.cpp" type="cpp.g++17"/>
+                        
+            <testset>
+                                
+                <test-count>9</test-count>
+                                
+                <input-path-pattern>files/tests/checker-tests/%02d</input-path-pattern>
+                                
+                <output-path-pattern>files/tests/checker-tests/%02d.o</output-path-pattern>
+                                
+                <answer-path-pattern>files/tests/checker-tests/%02d.a</answer-path-pattern>
+                                
+                <tests>
+                                        
+                    <test verdict="presentation-error"/>
+                                        
+                    <test verdict="ok"/>
+                                        
+                    <test verdict="presentation-error"/>
+                                        
+                    <test verdict="presentation-error"/>
+                                        
+                    <test verdict="ok"/>
+                                        
+                    <test verdict="presentation-error"/>
+                                        
+                    <test verdict="ok"/>
+                                        
+                    <test verdict="ok"/>
+                                        
+                    <test verdict="ok"/>
+                                    
+                </tests>
+                            
+            </testset>
+                    
+        </checker>
+                
+        <validators>
+                        
+            <validator>
+                                
+                <source path="files/validator.cpp" type="cpp.g++17"/>
+                                
+                <binary path="files/validator.exe" type="exe.win32"/>
+                                
+                <testset>
+                                        
+                    <test-count>8</test-count>
+                                        
+                    <input-path-pattern>files/tests/validator-tests/%02d</input-path-pattern>
+                                        
+                    <tests>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="invalid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="valid"/>
+                                                
+                        <test verdict="invalid"/>
+                                            
+                    </tests>
+                                    
+                </testset>
+                            
+            </validator>
+                    
+        </validators>
+                
+        <solutions>
+                        
+            <solution tag="main">
+                                
+                <source path="solutions/glebodin_full_white.cpp" type="cpp.g++17"/>
+                                
+                <binary path="solutions/glebodin_full_white.exe" type="exe.win32"/>
+                            
+            </solution>
+                    
+        </solutions>
+            
+    </assets>
+        
+    <properties>
+                
+        <property name="tests-wellformed" value="true"/>
+            
+    </properties>
+        
+    <stresses>
+                
+        <stress-count>0</stress-count>
+                
+        <stress-path-pattern>stresses/%03d</stress-path-pattern>
+                
+        <list/>
+            
+    </stresses>
+        
+    <tags>
+                
+        <tag value="constructive algorithms"/>
+                
+        <tag value="dp"/>
+            
+    </tags>
+    
+</problem>
